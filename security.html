@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Web Security - La Cocina Mexican Restaurant</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="cocina.css" rel="stylesheet">
+	<link rel="icon" href="favicon.png" type="image/ico">
+	<script src="modernizr.custom.05819.js"></script>
+</head>
+<body>
+<div id="page">
+<div id="wrapper">
+<header>
+	<h1>La Cocina
+	<span>Mexican Restaurant</span></h1>
+</header>
+
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="menu.html">Menu</a></li>
+		<li><a href="order.html">Order Online</a></li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="security.html">Web Security</a></li>
+		<li><a href="time.html">Time</a></li>
+	</ul>
+</nav>
+
+<main>
+	<h2>Web Security</h2>
+	<p>Using Javascript, a web app can access information about the computer you are using 
+	to browse the internet. The table below shows some of this information.</p>
+	
+	<table class="securitytable">
+		<tr>
+			<th>Current Browser</th>
+			<td id="browser"></td>
+		</tr>
+		<tr>
+			<th>User Agent</th>
+			<td id="agent"></td>
+		</tr>
+		<tr>
+			<th>Current OS</th>
+			<td id="os"></td>
+		</tr>
+		<tr>
+			<th>Network Connection</th>
+			<td id="online"></td>
+		</tr>
+		<tr>
+			<th>Height of Screen</th>
+			<td id="screenHeight"></td>
+		</tr>
+		<tr>
+			<th>Width of Screen</th>
+			<td id="screenWidth"></td>
+		</tr>		
+	</table>
+	<p>If you would like to learn about how to use the web safely, these resources are a good
+	place to start.</p>
+	<ul>
+		<li><a href="https://usa.kaspersky.com/resource-center/preemptive-safety/top-10-internet-safety-rules-and-what-not-to-do-online">
+		Kaspersky.com</a>, a virus proection vendor, also offers a list of 10 rules for safely browsing the internet.</li>
+		<li><a href="https://usa.kaspersky.com/resource-center/preemptive-safety/top-10-internet-safety-rules-and-what-not-to-do-online">
+		AVG.com</a>, another virus protection vendor, explains how to determine if a website is safe.</li>
+		<li><a href="https://www.pandasecurity.com/en/mediacenter/mobile-news/tips-browsing-safer/">PandaSecurity.com</a>
+		offers 10 tips for a safer and more satisfying browsing experience. </li>
+	</ul>
+	<br>
+	<h2>Location</h2>
+	
+	<div id="map"></div>
+	
+	<table class="securitytable">
+		<tr>
+			<th>Latitude</th>
+			<td id="lat"></td>
+		</tr>
+		<tr>
+			<th>Longitude</th>
+			<td id="lon"></td>
+		</tr>
+		<tr>
+			<th>Altitude</th>
+			<td id="alti"></td>
+		</tr>
+	</table>
+	
+</main>
+<br>
+</div>
+</div>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+	<script src="securityjs.js"></script>
+</body>
+</html>

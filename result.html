@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Order Result - La Cocina Mexican Restaurant</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="cocina.css" rel="stylesheet">
+	<link rel="icon" href="favicon.png" type="image/ico">
+	<script src="modernizr.custom.05819.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+	<h1>La Cocina
+	<span>Mexican Restaurant</span></h1>
+</header>
+
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="menu.html">Menu</a></li>
+		<li><a href="order.html">Order Online</a></li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="security.html">Web Security</a></li>
+		<li><a href="time.html">Time</a></li>
+	</ul>
+</nav>
+
+<main>
+	<h2>Order Results</h2>
+	<p>This page is simply proof that the form submits. <a href="order.html">Go Back</a></p>
+	<h4>You entered the data:</h4>
+	    <script>
+             var formData = location.search;
+             formData = formData.substring(1, formData.length);
+             while (formData.indexOf("+") !== -1) {
+                formData = formData.replace("+", " ");
+             }
+             formData = decodeURIComponent(formData);
+             var formArray = formData.split("&");
+             for (var i = 0; i < formArray.length; i = i + 1) {
+                document.write("<p>" + formArray[i] + "</p>");
+             }
+         </script>
+	
+</main>
+<br>
+</div>
+</body>
+</html>

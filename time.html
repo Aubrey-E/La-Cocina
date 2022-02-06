@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Calculate Time - La Cocina Mexican Restaurant</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="cocina.css" rel="stylesheet">
+	<link rel="icon" href="favicon.png" type="image/ico">
+	<script src="modernizr.custom.05819.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+	<h1>La Cocina
+	<span>Mexican Restaurant</span></h1>
+</header>
+
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="menu.html">Menu</a></li>
+		<li><a href="order.html">Order Online</a></li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="security.html">Web Security</a></li>
+		<li><a href="time.html">Time</a></li>
+	</ul>
+</nav>
+
+<main>
+	<h2>Calculate Time</h2>
+	<p>This page calculates the amount of time that has passed since an entered date.
+	Enter a date to calulate the time passed. The date must be after January 1, 1970.</p>
+	
+	<form>
+        <label for="date">Select a date: </label>
+        <input type="date" id="date" />
+
+        <button type="button" id="calculate">Get Time Elapsed</button>
+     </form>
+	 <br>
+        <p>Time Elapsed:</p>
+        <p id="time"></p>
+
+	
+</main>
+<br>
+</div>
+<script src="timejs.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+/* Aubrey Eriks
+1/29/21
+SDEV250 */
+* { box-sizing: border-box; }
+header, nav, main, footer, aside {display: block; }
+	* { margin: 0;
+		padding: 0; }
+
+/* Colors: Off-black: #190C0E, Off-white #F9F9F9, Tan #EFECE6, Dark Green #0B7226,
+ Red #BD0005, Light Green #C4FFD4, Green #2DBA52, Dull Red, #B3A4A5 */
+
+/*This is the general CSS for all pages */
+html { height: 100%; }
+body { background-color: #0B7226;
+		color: #190C0E;
+		font-family: Candara, Garamond, serif;
+		font-size: 110%;
+		height: 100%; }
+#wrapper { width: 85%;
+			min-width: 1000px;
+			max-width: 1280px;
+			margin-right: auto;
+			margin-left: auto;
+			box-shadow: 0px 0px 10px #190C0E;
+			background-color: #EFECE6;
+			height: 100%;
+			overflow: auto; }		
+
+			
+header { background-color: #EFECE6;
+		background-image: url("images/table.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 200px;
+		font-family: "Brush Script MT", cursive; }
+h1 {  padding-top: 15px;
+		text-align: center;
+		padding-bottom: 0;
+		color: #0B7226;
+		font-size: 4em;
+		width: 60%;
+		border: 5px double #BD0005;
+		margin: auto;
+		border-radius: 25px;
+		background-color: #FFFFFF; }
+header h1 span { padding-left: 100px;
+				font-size: .5em;
+				display: block;
+				padding-bottom: 15px; }
+				
+nav {   font-weight: bold;
+		font-size: 1.5em;
+		background-color: #BD0005;
+		text-align: center; 
+		padding: 10px; }
+nav a { text-decoration: none; }
+nav a:link { color: #F9F9F9; }
+nav a:visited { color: #F9F9F9; }
+nav a:hover { color: #C4FFD4 }
+nav ul { list-style-type: none; }
+nav li { display: inline; 
+		padding: 10px; }
+		
+main {  padding: 1em 3em 2em 3em; }		
+			
+#page { position: relative; }
+		
+/* this is the css for the index */
+h2, p { padding-bottom: 10px; }
+.homediv { padding-left: 20%;
+			padding-top: 2em;
+			display: inline-block; 
+			float: left; }
+.homediv h2 { text-align: center; }
+.homediv th, td { padding-bottom: 10px; }
+.homediv td { padding-left: 5px; }
+h3 { padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center; }
+
+#locationform { padding: 5px;
+				text-align: center;
+				width: 250px; }
+#locationform select { height: 2em;
+						width: 12em; 
+						border: 2px solid #0B7226;
+						border-radius: 5px; }
+/* this is the css for the menu */ 
+
+#menu { margin: auto; 
+		margin-top: 2em;
+		width: 80%;
+		border-spacing: 0;
+		border-left: 2px solid #BD0005;
+		border-top: 2px solid #BD0005;
+		border-bottom: 2px solid #BD0005;
+		background-color: #EFECE6;
+		box-shadow: 0px 0px 4px #190C0E; }
+#menu td, #menu th { padding: 10px;
+			border-right: 2px solid #BD0005; }
+#menu tr:nth-of-type(even) { background-color: #F9F9F9; }
+.title { font-size: 1.4em;
+			color: #F9F9F9;
+			background-color: #0B7226; }
+
+/* this is the css for the order page */
+
+#order { padding: 2em;
+		float: left; }
+#order label { display: inline; }
+#enchilada, #burrito, #chimi, #fajita, #taco, #bean, #rice, #queso, #guac, #pico, #coffee, #horchata {
+				display: inline;
+				float: right;
+				border: 1.5px solid #BD0005;
+				border-radius: 8px;
+				text-align: center;
+				height: 1.5em;
+				width: 6em; }
+#phone, #name, #order textarea { margin-bottom: 1em;
+					display: block;
+					border: 1.5px solid #BD0005;
+					border-radius: 8px;
+					text-align: center; }
+#order h4 { padding-top: 8px;
+			margin-top: 12px;
+			border-top: 2px dashed #0B7226; }
+
+#orderdiv { font-weight: bold; 
+			float: left;
+			background-color: #F9F9F9;
+			padding: .5em 4em 5em 4em; 
+			margin-top: 3em;
+			border-radius: 25px;
+			text-align: center;
+			border: 1.5px solid #BD0005; }
+#ordersubmit { height: 2em;
+			width: 8em;
+			border: 1.5px solid #BD0005;
+			border-radius: 8px;
+			font-weight: bold; }
+			
+#locations { padding-bottom: 1em; }
+#hobart { margin-left: 10px; }
+
+fieldset { border: none; }
+
+
+/*this is the css added for the web security page */
+ul { list-style-type: none; }
+.securitytable { margin: auto; 
+			width: 80%;
+			margin-top: 2em;
+			margin-bottom: 2em;
+			border-spacing: 0;
+			border-left: 2px solid #190C0E;
+			border-top: 2px solid #190C0E; }
+.securitytable td, .securitytable th { padding: 10px;
+			border-right: 2px solid #190C0E;
+			border-bottom: 2px solid #190C0E; }
+#map { width: 600px;
+	height: 400px; 
+	margin-left: auto;
+	margin-right: auto; }
+
+
+
+/* this is the css added for the time page */
+#calculate { padding: 4px; }

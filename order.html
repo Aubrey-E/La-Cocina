@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Order Online - La Cocina Mexican Restaurant</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="cocina.css" rel="stylesheet">
+	<link rel="icon" href="favicon.png" type="image/ico">
+	<script src="modernizr.custom.05819.js"></script>
+</head>
+<body>
+<div id="page">
+<div id="wrapper">
+<header>
+	<h1>La Cocina
+	<span>Mexican Restaurant</span></h1>
+</header>
+
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="menu.html">Menu</a></li>
+		<li><a href="order.html">Order Online</a></li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="security.html">Web Security</a></li>
+		<li><a href="time.html">Time</a></li>
+	</ul>
+</nav>
+
+<main>
+	<h2>Order Online</h2>
+	<p>In light of the Covid-19 pandemic, La Cocina now accepts orders online for to-go pickup.
+	Your food should be ready in less than 30 minutes. We will contact you approximately 10
+	minutes before your order is ready for pickup.</p>
+	
+	<form id="order" action="result.html" novalidate="novalidate">
+		<fieldset id="dishes">
+		<h4>Main Dishes</h4>
+		<label for="enchilada">Enchiladas ($11.99):</label>
+		<input type="number" min="0" max="10" id="enchilada" name="dish"/><br>
+		
+		<label for="burrito">Burritos ($12.99):</label>
+		<input type="number" min="0" max="10" id="burrito" name="dish"/><br>
+		
+		<label for="chimi">Chimichangas ($11.99):</label>
+		<input type="number" min="0" max="10" id="chimi" name="dish"/><br>
+		
+		<label for="fajita">Fajitas ($12.99):</label>
+		<input type="number" min="0" max="10" id="fajita" name="dish"/><br>
+		
+		<label for="taco">Tacos ($10.99):</label>
+		<input type="number" min="0" max="10" id="taco" name="dish"/><br>
+		
+		<h4>Sides</h4>
+		<label for="bean">Extra Beans ($0.99):</label>
+		<input type="number" min="0" max="10" id="bean" name="dish"/><br>
+		
+		<label for="rice">Extra Rice ($0.99):</label>
+		<input type="number" min="0" max="10" id="rice" name="dish"/><br>
+		
+		<label for="queso">Queso ($0.99):</label>
+		<input type="number" min="0" max="10" id="queso" name="dish"/><br>
+		
+		<label for="guac">Guacamole ($0.99):</label>
+		<input type="number" min="0" max="10" id="guac" name="dish"/><br>
+		
+		<label for="pico">Pico de Gallo ($0.99):</label>
+		<input type="number" min="0" max="10" id="pico" name="dish"/><br>
+		
+		<h4>Drinks</h4>
+		<label for="coffee">Coffee ($0.99):</label>
+		<input type="number" min="0" max="10" id="coffee" name="dish"/><br>
+		
+		<label for="horchata">Horchata ($1.99):</label>
+		<input type="number" min="0" max="10" id="horchata" name="dish"/><br>
+		</fieldset>
+		
+		<h4>Free Sides</h4>
+		<fieldset class="checks">
+		<input type="checkbox" id="cChip" value="Corn Chips" name="freeSide"/>
+        <label for="cChip" id="cChipLabel">Corn Chips</label><br>
+        <input type="checkbox" id="fChip" value="Flour Chips" name="freeSide"/>
+        <label for="fChip" id="fChipLabel">Flour Chips</label><br>
+		<input type="checkbox" id="mSalsa" value="Mild Salsa" name="freeSide"/>
+        <label for="mSalsa" id="mSalsaLabel">Mild Salsa</label><br>
+		<input type="checkbox" id="medSalsa" value="Medium Salsa" name="freeSide"/>
+        <label for="medSalsa" id="medSalsaLabel">Medium Salsa</label><br>
+		<input type="checkbox" id="hSalsa" value="Hot Salsa" name="freeSide"/>
+        <label for="hSalsa" id="hSalsaLabel">Hot Salsa</label>			
+		</fieldset>
+		
+		<h4>Customer Information</h4>
+		<label for="name">Name:</label>
+		<input type="text" name="name" id="name" required="required">
+		
+		<label for="phone">Phone (###-###-####):</label>
+		<input type="tel" name="phone" id="phone" required="required">
+		
+		<fieldset id="locations">
+		<legend>Where will you pick up your order?</legend>
+		<input type="radio" id="munster" name="location" value="Munster"/>
+        <label for="munster" id="munsterLabel">Munster Location</label>
+        <input type="radio" id="hobart" name="location" value="Hobart" />
+        <label for="hobart" id="hobartLabel">Hobart Location</label> <br>
+		</fieldset>
+		
+		<label for="requests">Any special requests for your order?:</label>
+		<textarea name="requests" id="requests" rows="10" cols="40"></textarea>
+		<input type="submit" value="Place Order" id="ordersubmit">
+	</form>
+	
+	<div id="orderdiv">
+		<p></p>
+		<p></p>
+		<p></p>
+	</div>
+
+</main>
+</div>
+</div>
+<script src="cocinaorderjs.js"></script>
+</body>
+</html>
